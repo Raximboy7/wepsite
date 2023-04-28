@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+ <div class="post-entry">
+  </div>
+  <div class="container marketing">
+
+    
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">{{post.title}} <span class="text-body-secondary">O'qtuvchi</span></h2>
+        <p class="lead">{{post.body}}</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <image class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{{post.image.url }}" alt="blog images" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></image>
+      </div>
+    </div>
+
+    
+
+  </div>
+{% endblock content %}
